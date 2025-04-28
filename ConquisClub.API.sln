@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConquisClub.API", "ConquisClub.API\ConquisClub.API.csproj", "{4390B01E-FF05-4AFB-A8F8-F35C415AB6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquiscamp.Application", "Conquiscamp.Application\Conquiscamp.Application.csproj", "{945DBA7F-A2C2-49D3-8250-839EB5717BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquiscamp.Domain", "Conquiscamp.Domain\Conquiscamp.Domain.csproj", "{4C663C23-3D33-45DD-BB55-CA3CCA85B39C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquiscamp.Persistence.Sql", "Conquiscamp.Persistence.Sql\Conquiscamp.Persistence.Sql.csproj", "{F4135FDF-6028-4BA7-A91C-117F64BEAB73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquiscamp.Infrastructure", "Conquiscamp.Infrastructure\Conquiscamp.Infrastructure.csproj", "{B54EB6E8-DDD9-47E4-A889-09AEE951029A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquiscamp.Shared", "Conquiscamp.Shared\Conquiscamp.Shared.csproj", "{1A8D3A29-2A39-45B9-9842-D0EBC1384BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4390B01E-FF05-4AFB-A8F8-F35C415AB6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4390B01E-FF05-4AFB-A8F8-F35C415AB6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4390B01E-FF05-4AFB-A8F8-F35C415AB6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4390B01E-FF05-4AFB-A8F8-F35C415AB6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945DBA7F-A2C2-49D3-8250-839EB5717BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945DBA7F-A2C2-49D3-8250-839EB5717BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945DBA7F-A2C2-49D3-8250-839EB5717BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945DBA7F-A2C2-49D3-8250-839EB5717BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C663C23-3D33-45DD-BB55-CA3CCA85B39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C663C23-3D33-45DD-BB55-CA3CCA85B39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C663C23-3D33-45DD-BB55-CA3CCA85B39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C663C23-3D33-45DD-BB55-CA3CCA85B39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4135FDF-6028-4BA7-A91C-117F64BEAB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4135FDF-6028-4BA7-A91C-117F64BEAB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4135FDF-6028-4BA7-A91C-117F64BEAB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4135FDF-6028-4BA7-A91C-117F64BEAB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54EB6E8-DDD9-47E4-A889-09AEE951029A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54EB6E8-DDD9-47E4-A889-09AEE951029A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54EB6E8-DDD9-47E4-A889-09AEE951029A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54EB6E8-DDD9-47E4-A889-09AEE951029A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8D3A29-2A39-45B9-9842-D0EBC1384BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8D3A29-2A39-45B9-9842-D0EBC1384BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8D3A29-2A39-45B9-9842-D0EBC1384BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8D3A29-2A39-45B9-9842-D0EBC1384BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49A0985-AE06-426A-B62D-3436880D8701}
+	EndGlobalSection
+EndGlobal
