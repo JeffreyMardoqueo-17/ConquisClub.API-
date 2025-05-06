@@ -5,98 +5,92 @@
 ## Estructura del Proyecto
 
 El proyecto está dividido en varias capas, cada una con una responsabilidad específica:
-Conquiscamp.API/                    # Capa de presentación (API)
-│
-├── Controllers/                    # Controladores REST (EndPoints)
-│   ├── AuthController.cs           # Controlador de autenticación (JWT)
-│   ├── EventController.cs          # Controlador para gestión de eventos
-│   └── ScoreController.cs          # Controlador para puntajes de clubes
-│
-├── Middleware/                     # Middleware global
-│   ├── ExceptionHandlingMiddleware.cs   # Manejo de excepciones global
-│   ├── JWTAuthenticationMiddleware.cs   # Middleware de autenticación JWT
-│   └── LoggingMiddleware.cs        # Middleware para logs personalizados
-│
-├── Program.cs                      # Configuración inicial de la API
-└── Startup.cs                      # Configuración de servicios y middleware
+✅ REFERENCIAS ENTRE PROYECTOS (.csproj)
+📁 Conquiscamp.API/
+➡️ Debe referenciar a:
 
-Conquiscamp.Application/            # Capa de lógica de negocio
-│
-├── Services/                       # Implementación de la lógica del negocio
-│   ├── AuthService.cs              # Lógica de autenticación JWT
-│   ├── EventService.cs             # Lógica relacionada a eventos
-│   └── ScoreService.cs             # Cálculo de puntajes
-│
-├── Interfaces/                     # Interfaces para los servicios
-│   ├── IAuthService.cs
-│   ├── IEventService.cs
-│   └── IScoreService.cs
+Conquiscamp.Application
 
-Conquiscamp.Domain/                # Capa de dominio (núcleo del negocio)
-│
-├── Entities/                       # Entidades del dominio
-│   ├── Club.cs
-│   ├── Event.cs
-│   └── Score.cs
-│
-├── ValueObjects/                   # Objetos de valor
-│   ├── Email.cs
-│   └── Name.cs
-│
-├── Interfaces/                     # Interfaces de repositorio
-│   ├── IClubRepository.cs
-│   ├── IEventRepository.cs
-│   └── IScoreRepository.cs
+Conquiscamp.Shared
 
-Conquiscamp.Persistence.Sql/        # Capa de persistencia (EF Core, SQL Server)
-│
-├── DbContext/
-│   ├── ApplicationDbContext.cs     # Contexto principal de EF Core
-│   └── Configuration.cs            # Configuraciones específicas
-│
-├── Migrations/                     # Migraciones de base de datos
-│   ├── 20230420120000_InitialCreate.cs
-│   └── 20230420130000_AddScoreTable.cs
-│
-├── Repositories/                   # Implementaciones de los repositorios
-│   ├── ClubRepository.cs
-│   ├── EventRepository.cs
-│   └── ScoreRepository.cs
+(opcional) Conquiscamp.Infrastructure si usas middlewares de logging, JWT helpers, etc.
 
-Conquiscamp.Infrastructure/         # Capa de infraestructura (servicios externos)
-│
-├── Email/
-│   ├── IEmailService.cs
-│   └── EmailService.cs
-│
-├── MongoLogging/
-│   ├── IMongoLogger.cs
-│   └── MongoLogger.cs
-│
-├── RedisCache/
-│   ├── ICacheService.cs
-│   └── RedisCacheService.cs
+xml
+Copy
+Edit
+<ProjectReference Include="..\Conquiscamp.Application\Conquiscamp.Application.csproj" />
+<ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+<!-- Opcional si usas helpers/middleware de Infrastructure -->
+<ProjectReference Include="..\Conquiscamp.Infrastructure\Conquiscamp.Infrastructure.csproj" />
+📁 Conquiscamp.Application/
+➡️ Debe referenciar a:
 
-Conquiscamp.Shared/                 # Capa compartida (común para todos los proyectos)
-│
-├── DTOs/
-│   ├── ClubDto.cs
-│   ├── EventDto.cs
-│   └── ScoreDto.cs
-│
-├── Results/
-│   ├── ApiResponse.cs
-│   └── ErrorResult.cs
-│
-├── Claims/
-│   ├── RoleClaims.cs
-│   └── PermissionClaims.cs
-│
-├── Helpers/
-│   ├── JwtHelper.cs
-│   └── LoggingHelper.cs
-│
-└── .env                            # Variables de entorno (configuración segura)
+Conquiscamp.Domain
+
+Conquiscamp.Shared
+
+xml
+Copy
+Edit
+<ProjectReference Include="..\Conquiscamp.Domain\Conquiscamp.Domain.csproj" />
+<ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+📁 Conquiscamp.Domain/
+➡️ No debe referenciar a ningún otro proyecto.
+
+Es la capa núcleo e independiente.
+
+xml
+Copy
+Edit
+<!-- No hay referencias en este .csproj -->
+📁 Conquiscamp.Persistence.Sql/
+➡️ Debe referenciar a:
+
+Conquiscamp.Domain (para implementar interfaces de repositorio)
+
+Conquiscamp.Shared (si usa DTOs, helpers, etc.)
+
+xml
+Copy
+Edit
+<ProjectReference Include="..\Conquiscamp.Domain\Conquiscamp.Domain.csproj" />
+<ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+📁 Conquiscamp.Infrastructure/
+➡️ Debe referenciar a:
+
+Conquiscamp.Domain (para implementar interfaces como IEmailService, ICacheService)
+
+Conquiscamp.Shared (para helpers, resultados, etc.)
+
+xml
+Copy
+Edit
+<ProjectReference Include="..\Conquiscamp.Domain\Conquiscamp.Domain.csproj" />
+<ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+📁 Conquiscamp.Shared/
+➡️ No debe referenciar a ningún otro proyecto.
+
+Es una capa de utilidades reutilizables.
+
+xml
+Copy
+Edit
+<!-- No hay referencias -->
+🧩 Diagrama Final de Referencias (Simplificado)
+css
+Copy
+Edit
+            [ Shared ]
+               ▲   ▲   ▲   ▲
+               │   │   │   │
+          [Infrastructure] [Persistence.Sql]
+               ▲       ▲
+               └───────┤
+                       │
+                 [Application]
+                       ▲
+                       │
+                     [API]
 
 ### Capa de Presentación (API)
 
