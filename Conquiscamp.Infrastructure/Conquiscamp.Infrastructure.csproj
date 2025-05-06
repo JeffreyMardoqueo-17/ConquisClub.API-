@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Conquiscamp.Domain\Conquiscamp.Domain.csproj" />
+    <ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

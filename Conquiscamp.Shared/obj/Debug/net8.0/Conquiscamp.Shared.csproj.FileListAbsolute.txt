@@ -1,0 +1,12 @@
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\bin\Debug\net8.0\Conquiscamp.Shared.deps.json
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\bin\Debug\net8.0\Conquiscamp.Shared.dll
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\bin\Debug\net8.0\Conquiscamp.Shared.pdb
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.AssemblyInfoInputs.cache
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.AssemblyInfo.cs
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.sourcelink.json
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.dll
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\refint\Conquiscamp.Shared.dll
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\Conquiscamp.Shared.pdb
+C:\Users\Eduardo\Music\ConquisClub.API\Conquiscamp.Shared\obj\Debug\net8.0\ref\Conquiscamp.Shared.dll

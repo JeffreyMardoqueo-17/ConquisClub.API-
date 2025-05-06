@@ -29,4 +29,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Conquiscamp.Application\Conquiscamp.Application.csproj" />
+    <ProjectReference Include="..\Conquiscamp.Infrastructure\Conquiscamp.Infrastructure.csproj" />
+    <ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

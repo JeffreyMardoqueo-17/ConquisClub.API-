@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Conquiscamp.Application/1.0.0": {
+        "dependencies": {
+          "Conquiscamp.Domain": "1.0.0",
+          "Conquiscamp.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Conquiscamp.Application.dll": {}
+        }
+      },
+      "Conquiscamp.Domain/1.0.0": {
+        "runtime": {
+          "Conquiscamp.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Conquiscamp.Shared/1.0.0": {
+        "runtime": {
+          "Conquiscamp.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Conquiscamp.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Conquiscamp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Conquiscamp.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

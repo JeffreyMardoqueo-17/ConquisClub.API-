@@ -2092,6 +2092,54 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "Conquiscamp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Conquiscamp.Domain": "1.0.0",
+          "Conquiscamp.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Conquiscamp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conquiscamp.Application.dll": {}
+        }
+      },
+      "Conquiscamp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Conquiscamp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conquiscamp.Domain.dll": {}
+        }
+      },
+      "Conquiscamp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Conquiscamp.Domain": "1.0.0",
+          "Conquiscamp.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Conquiscamp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conquiscamp.Infrastructure.dll": {}
+        }
+      },
+      "Conquiscamp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Conquiscamp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conquiscamp.Shared.dll": {}
+        }
       }
     }
   },
@@ -5985,12 +6033,35 @@
         "zstdsharp.port.0.7.3.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Conquiscamp.Application/1.0.0": {
+      "type": "project",
+      "path": "../Conquiscamp.Application/Conquiscamp.Application.csproj",
+      "msbuildProject": "../Conquiscamp.Application/Conquiscamp.Application.csproj"
+    },
+    "Conquiscamp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Conquiscamp.Domain/Conquiscamp.Domain.csproj",
+      "msbuildProject": "../Conquiscamp.Domain/Conquiscamp.Domain.csproj"
+    },
+    "Conquiscamp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Conquiscamp.Infrastructure/Conquiscamp.Infrastructure.csproj",
+      "msbuildProject": "../Conquiscamp.Infrastructure/Conquiscamp.Infrastructure.csproj"
+    },
+    "Conquiscamp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Conquiscamp.Shared/Conquiscamp.Shared.csproj",
+      "msbuildProject": "../Conquiscamp.Shared/Conquiscamp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 14.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Conquiscamp.Application >= 1.0.0",
+      "Conquiscamp.Infrastructure >= 1.0.0",
+      "Conquiscamp.Shared >= 1.0.0",
       "FluentValidation >= 11.11.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
@@ -6034,7 +6105,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Application\\Conquiscamp.Application.csproj": {
+              "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Application\\Conquiscamp.Application.csproj"
+            },
+            "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Infrastructure\\Conquiscamp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Infrastructure\\Conquiscamp.Infrastructure.csproj"
+            },
+            "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Shared\\Conquiscamp.Shared.csproj": {
+              "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Shared\\Conquiscamp.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

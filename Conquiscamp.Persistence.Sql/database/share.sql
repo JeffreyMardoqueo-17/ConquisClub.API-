@@ -57,26 +57,30 @@ CREATE TABLE SancionClub (
 
 
 GO
+
+-- Tabla MiembroClub
 CREATE TABLE MiembroClub(
     Id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     Nombre VARCHAR(100) NOT NULL,
-    FechaNacimiento DATE NOT NULL, ---esto es para que automaticamete se cambie la edad 
-    Genero VARCHAR(25) NOT NULL,---Se llenara con un select 
+    FechaNacimiento DATE NOT NULL,
+    Genero VARCHAR(25) NOT NULL,
     IdRol INT NOT NULL FOREIGN KEY REFERENCES Rol(Id),
-    EsBautizado BOOLEAN,    
+    EsBautizado BIT,
     IdClub INT NOT NULL FOREIGN KEY REFERENCES Club(Id)
 );
-
 GO
+
+-- Tabla HistorialEstadoMiembro
 CREATE TABLE HistorialEstadoMiembro(
     Id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     IdMiembroClub INT NOT NULL FOREIGN KEY REFERENCES MiembroClub(Id),
-    EstadoAnterior VARCHAR(50), 
-    EstadoNuevo VARCHAR(50), 
+    EstadoAnterior VARCHAR(50),
+    EstadoNuevo VARCHAR(50),
     Motivo VARCHAR(MAX) NOT NULL,
     Fecha DATETIME DEFAULT GETDATE()
 );
-GO 
+GO
+---SEGUNDA PARTE 
 CREATE TABLE Evento (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Nombre VARCHAR(100) NOT NULL,
