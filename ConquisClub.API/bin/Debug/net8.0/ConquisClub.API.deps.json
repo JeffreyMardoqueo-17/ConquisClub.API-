@@ -12,6 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Conquiscamp.Application": "1.0.0",
           "Conquiscamp.Infrastructure": "1.0.0",
+          "Conquiscamp.Persistence.Sql": "1.0.0",
           "Conquiscamp.Shared": "1.0.0",
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
@@ -1404,6 +1405,19 @@
           }
         }
       },
+      "Conquiscamp.Persistence.Sql/1.0.0": {
+        "dependencies": {
+          "Conquiscamp.Domain": "1.0.0",
+          "Conquiscamp.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+        },
+        "runtime": {
+          "Conquiscamp.Persistence.Sql.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Conquiscamp.Shared/1.0.0": {
         "runtime": {
           "Conquiscamp.Shared.dll": {
@@ -2187,6 +2201,11 @@
       "sha512": ""
     },
     "Conquiscamp.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Conquiscamp.Persistence.Sql/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

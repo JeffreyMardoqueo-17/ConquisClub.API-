@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConquisClub.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+632c6802737183606a37d5e066ee5103c484cebc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ffe4172502a45e3ea3d139b0778ebb003db14fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConquisClub.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConquisClub.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

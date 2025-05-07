@@ -2131,6 +2131,21 @@
           "bin/placeholder/Conquiscamp.Infrastructure.dll": {}
         }
       },
+      "Conquiscamp.Persistence.Sql/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Conquiscamp.Domain": "1.0.0",
+          "Conquiscamp.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Conquiscamp.Persistence.Sql.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conquiscamp.Persistence.Sql.dll": {}
+        }
+      },
       "Conquiscamp.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -6049,6 +6064,11 @@
       "path": "../Conquiscamp.Infrastructure/Conquiscamp.Infrastructure.csproj",
       "msbuildProject": "../Conquiscamp.Infrastructure/Conquiscamp.Infrastructure.csproj"
     },
+    "Conquiscamp.Persistence.Sql/1.0.0": {
+      "type": "project",
+      "path": "../Conquiscamp.Persistence.Sql/Conquiscamp.Persistence.Sql.csproj",
+      "msbuildProject": "../Conquiscamp.Persistence.Sql/Conquiscamp.Persistence.Sql.csproj"
+    },
     "Conquiscamp.Shared/1.0.0": {
       "type": "project",
       "path": "../Conquiscamp.Shared/Conquiscamp.Shared.csproj",
@@ -6061,6 +6081,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Conquiscamp.Application >= 1.0.0",
       "Conquiscamp.Infrastructure >= 1.0.0",
+      "Conquiscamp.Persistence.Sql >= 1.0.0",
       "Conquiscamp.Shared >= 1.0.0",
       "FluentValidation >= 11.11.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.15",
@@ -6111,6 +6132,9 @@
             },
             "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Infrastructure\\Conquiscamp.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Infrastructure\\Conquiscamp.Infrastructure.csproj"
+            },
+            "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Persistence.Sql\\Conquiscamp.Persistence.Sql.csproj": {
+              "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Persistence.Sql\\Conquiscamp.Persistence.Sql.csproj"
             },
             "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Shared\\Conquiscamp.Shared.csproj": {
               "projectPath": "C:\\Users\\Eduardo\\Music\\ConquisClub.API\\Conquiscamp.Shared\\Conquiscamp.Shared.csproj"

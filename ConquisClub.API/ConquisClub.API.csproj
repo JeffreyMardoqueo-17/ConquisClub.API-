@@ -33,6 +33,7 @@
     <ProjectReference Include="..\Conquiscamp.Application\Conquiscamp.Application.csproj" />
     <ProjectReference Include="..\Conquiscamp.Infrastructure\Conquiscamp.Infrastructure.csproj" />
     <ProjectReference Include="..\Conquiscamp.Shared\Conquiscamp.Shared.csproj" />
+    <ProjectReference Include="..\Conquiscamp.Persistence.Sql\Conquiscamp.Persistence.Sql.csproj" />
   </ItemGroup>
 
 </Project>

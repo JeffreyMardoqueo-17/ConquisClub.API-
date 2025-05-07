@@ -203,3 +203,5 @@ C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\bin\Debug\net8.0\Conquisc
 C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\bin\Debug\net8.0\Conquiscamp.Shared.pdb
 C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\bin\Debug\net8.0\Conquiscamp.Domain.pdb
 C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\obj\Debug\net8.0\ConquisClub.API.sourcelink.json
+C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\bin\Debug\net8.0\Conquiscamp.Persistence.Sql.dll
+C:\Users\Eduardo\Music\ConquisClub.API\ConquisClub.API\bin\Debug\net8.0\Conquiscamp.Persistence.Sql.pdb
